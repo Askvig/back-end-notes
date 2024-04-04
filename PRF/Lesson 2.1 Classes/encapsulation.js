@@ -26,33 +26,34 @@ newCar._year = 2221; //Setting the year value
 console.log(newCar.year); //2221
 console.log(newCar._year); //2221
 
+console.log();
 
 class Truck {
-    #_year
-    constructor(name, year) {
+    #_years
+    constructor(name, years) {
         this.name = name;
-        this.year = year;
+        this.years = years;
     }
-    set year(newYear) {
+    set years(newYears) {
         let date = new Date();
-        if (newYear > date.getFullYear()) {
-            this.#_year = date.getFullYear();
+        if (newYears > date.getFullYear()) {
+            this.#_years = date.getFullYear();
             }
             else {
-                this.#_year = newYear;
+                this.#_years = newYears;
             }
         }
-    get year() {
-        return this.#_year;
+    get years() {
+        return this.#_years;
         }
     age() {
         let date = new Date();
-        return date.getFullYear() - this.#_year;
+        return date.getFullYear() - this.#_years;
     }
 }
 let newTruck = new Truck("Nissan", 2221);// Sets the year to 2221
-console.log(newTruck.year); // Logs the current year
-console.log(newTruck._year); // undefined
-newTruck._year = 2221; //Setting the year value
-console.log(newTruck.year); //Logs current year
-console.log(newTruck._year); //This value changes but, the year does not.
+console.log(newTruck.years); // Logs the current year
+console.log(newTruck._years); // undefined
+newTruck._years = 2221; //Setting the year value
+console.log(newTruck.years); //Logs current year
+console.log(newTruck._years); //This value changes but, the year does not.
