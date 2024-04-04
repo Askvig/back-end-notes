@@ -1,0 +1,15 @@
+Usually, collections provided by JavaScript are more than enough for our coding. However, more advanced data structures might sometimes be necessary with more complex problems. We’ll need to implement these structures by ourselves with the provided schema. In this section, we’ll discuss these structures briefly, but we highly recommend also reading the article in the READ section. This article explains the implementation and provides a more detailed description of each data structure.
+
+1. Stack: Works like stacking books. We can only add or remove elements from the top.
+
+2. Queue: Similar to stack, we can remove elements only from the top and add elements only to the end.
+
+3. Linked List: Data is grouped in nodes, and nodes are connected with links. We start from the ‘head’ node and must go through all the links to reach the last node.
+
+4. Set: We use it to create a set of unique elements, just like a built-in JavaScript set, but we can also create intersections and differences of sets or subsets.
+
+5. Hash Table: This is a key-value data structure, just like JavaScript Map. Thanks to the hash function, we can quickly find a value corresponding to a key.
+
+6. Tree: Data is grouped in nodes. We have access to the root node. Inserting new elements and searching for an element is highly efficient in this structure.
+
+7. Graph: Data is grouped in nodes. Graphs are used widely to solve daily problems, such as finding the shortest route to school or recommending new friends on social media.
