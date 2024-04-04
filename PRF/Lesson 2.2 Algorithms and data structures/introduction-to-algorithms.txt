@@ -1,0 +1,19 @@
+Algorithms are tools to solve complicated problems. In this section, we’ll focus on how to compare their quality. We’ll also learn recursion, a powerful tool crucial for divide-and-conquer algorithms.
+
+Some algorithms are more efficient than others. The following measures define the effectiveness of an algorithm:
+
+- Time complexity: How much time is required to execute the algorithm? As computers differ, the time complexity isn’t measured in seconds but the number of standard operations. You can read more about this in the article in the READ section.
+
+- Memory complexity: How much memory we need to execute the algorithm.
+Usually, we focus more on time complexity, as memory isn’t the problem nowadays. While memory is easily accessible, some algorithms might use so much memory that it becomes significant.
+
+
+Based on these factors, we can define four performance cases:
+
+- Worst case time complexity: A function defined as a result of a maximum number of steps taken on any instance of size n. It’s usually expressed in Big O notation.
+
+- Average case time complexity: A function defined as a result of the average number of steps taken on any instance of size n. It’s usually expressed in Big theta notation.
+
+- Best case time complexity: A function defined as a result of the minimum number of steps taken on any instance of size n. It’s usually expressed in Big omega notation.
+
+- Space complexity: A function defined as a result of additional memory space needed to carry out the algorithm. It’s usually expressed in Big O notation.
