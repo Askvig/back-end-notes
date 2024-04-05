@@ -26,7 +26,7 @@ newCar._year = 2221; //Setting the year value
 console.log(newCar.year); //2221
 console.log(newCar._year); //2221
 
-console.log();
+console.log(); // added to get a break in the output
 
 class Truck {
     #_years
