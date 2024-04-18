@@ -1,0 +1,24 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/c9/40/a3/c940a3dae3900d100990e5b697ef196c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(250, 66, 225);
+}
+
+button {
+    background-color: green;
+    height: 100px;
+    width: 120px;
+}
+
+#block li {
+    display: block;
+}
+
+.inline li {
+    display: inline;
+}

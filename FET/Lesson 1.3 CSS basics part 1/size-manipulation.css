@@ -1,0 +1,14 @@
+#button1 {
+    height: 100px;
+    width: 200px;
+}
+
+#button2 {
+    height: 100px;
+}
+
+button {
+    width: 30%;
+    min-width: 50px;
+    max-width: 100px;
+}

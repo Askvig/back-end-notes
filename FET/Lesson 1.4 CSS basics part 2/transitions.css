@@ -1,0 +1,27 @@
+.one {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+
+.one:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.two {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition-property: width, height, transform;
+    transition-duration: 2s, 2s, 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.two:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}

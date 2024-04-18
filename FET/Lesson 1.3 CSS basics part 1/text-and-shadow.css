@@ -1,0 +1,19 @@
+h1 {
+    text-decoration: overline red double 5px;
+    text-align: center;
+    text-shadow: 3px 3px 8px orange;
+}
+
+h2 {
+    text-decoration: line-through blue dotted;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-decoration: underline green double 1px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px blue;
+}

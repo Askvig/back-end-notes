@@ -1,0 +1,66 @@
+h1 {
+    width: 50%;
+}
+
+.hello {
+    color: blue;
+}
+
+#paragraph3 {
+    margin: 2px 20px 5px 10px;
+    padding: 2px 20px 5px 10px;
+}
+
+.big {
+    font-size: 200%;
+}
+
+.green {
+    background-color: green;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+table,
+th,
+td {
+    border: 2px dashed red;
+}
+
+th {
+    padding: 10px;
+}
+
+#para1 {
+    position: fixed;
+    top: 400px;
+    left: 400px;
+}
+
+div {
+    width: 150px;
+    /* float: right; */
+    height: 100px;
+    overflow-x: scroll;
+}
+
+section {
+    width: 150px;
+    position: absolute;
+    right: 0;
+}
+
+#pika {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+}

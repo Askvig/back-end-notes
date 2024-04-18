@@ -1,0 +1,11 @@
+li, p {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+#link3 {
+    visibility: hidden;
+}
