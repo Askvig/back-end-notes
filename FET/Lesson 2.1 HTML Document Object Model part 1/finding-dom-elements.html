@@ -7,11 +7,50 @@
         <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
     </div>
     <p id="demo"></p>
+    <br>
+
+    <p>Add a background color to the first p element with class="example".</p>
+    <p>Paragraph 1</p>
+    <p class="example">Paragraph 2</p>
+    <p class="example">Paragraph 3</p>
+    <br>
+
+    <img id="pikachu1" src="https://i.pinimg.com/originals/c9/40/a3/c940a3dae3900d100990e5b697ef196c.jpg" alt="Pika Pika">
+    <img id="pikachu2" src="https://i.pinimg.com/originals/c9/40/a3/c940a3dae3900d100990e5b697ef196c.jpg" alt="Pika Pika">
+    <p id="demo1"></p>
+    <br>
+
+    <p name="para" class="para">The first paragraph</p>
+    <p name="para" class="para">The second paragraph</p>
+    <p name="para" class="para">The third paragraph</p>
+    <p name="para">The fourth paragraph</p>
+    <br>
+
+    <!-- Activity -->
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="https://twitter.com/">X</a>
+    <p id="activity"></p>
+    <p id="activity1"></p>
     <script>
+        // getElementByTagName()
+        /* returns an array of elements with this tag */
         const x = document.getElementById("main");
         const y = x.getElementsByTagName("p");
         document.getElementById("demo").innerHTML =
             'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+        // querySelectorAll()
+        /* pass the selector as the string argument */
+        document.querySelector("p.example").style.backgroundColor = "green";
+        // Grouping into object collections as images
+        document.getElementById("demo1").innerHTML = "Number of images: " + document.images.length;
+        // Selecting multiple elements in other ways than using ID
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.getElementsByClassName("para"));
+        console.log(document.getElementsByName("para"));
+        // Activity
+        document.getElementById("activity").innerHTML = "Number of links on this website: " + document.links.length;
+        document.getElementById("activity1").innerHTML = `Number of links on this website: ${document.links.length}`;
     </script>
 </body>
 

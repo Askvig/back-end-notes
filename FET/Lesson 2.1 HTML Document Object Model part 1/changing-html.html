@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <p id="p1">Hello World!</p>
+    <br>
+    
+    <p id="para1" class="para">The first paragraph</p>
+    <p class="para">The second paragraph</p>
+    <p class="para">The third paragraph</p>
+    <p>The fourth paragraph</p>
+    <script>
+        document.getElementById("p1").innerHTML = "New text!";
+        document.getElementById("p1").style.backgroundColor = "red";
+        var para = document.getElementById("para1");
+        para.className = "para2";
+        // Activity
+        document.getElementById("p1").style.backgroundColor = "red";
+        document.getElementById("p1").style.fontSize = "20px";
+    </script>
+</body>
+
+</html>
