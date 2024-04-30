@@ -2,9 +2,19 @@
 <html>
 
 <body>
-    <p id=”demo”></p>
+    <p id="demo">Time</p>
+    <!-- Activity -->
+    <p id="randomColor">One paragraph</p>
     <script>
-        document.getElementById("demo").innerHTML = "Date: " + Date();
+        setInterval(() => document.getElementById("demo").innerHTML = "Date: " + Date(), 5000);
+        // Activity
+        setInterval(() => {
+            if (Math.random() > 0.5) {
+                document.getElementById("randomColor").style.backgroundColor = "blue";
+            } else {
+                document.getElementById("randomColor").style.backgroundColor = "red";
+            }
+        }, 5000)
     </script>
 </body>
 
