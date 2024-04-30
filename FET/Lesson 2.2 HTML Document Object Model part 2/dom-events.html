@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        #myDiv1,
+        #myDiv2 {
+            background-color: yellow;
+            padding: 50px;
+        }
+    
+        #para1,
+        #para2 {
+            background-color: blue;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+    <br>
+
+    <h2 id="myHeader">Click on this text!</h2>
+    <br>
+
+    <h3 id="myHeader3">Click on this text!</h3>
+    <br>
+
+    <h4 id="myHeader4">Click on this text!</h4>
+    <br>
+
+    <h5 id="myHeader">Click on this text!</h5>
+    <br>
+
+    <h6 id="myHeader">Click on this text!</h6>
+    <br>
+
+    <div id="myDiv1">
+        <h2>Bubbling:</h2>
+        <p id="para1">Click here!</p>
+    </div><br>
+    
+    <div id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="para2">Click here!</p>
+    </div>
+    <br>
+
+    <!-- Activity -->
+    <button onclick="buttonClick(this)" id="button1">Click here</button>
+
+    <script src="./dom-events.js"></script>
+</body>
+</html>

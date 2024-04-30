@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS</title>
+</head>
+<body>
+    <h1 id="id1">My Heading 1</h1>
+    <button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+        Click Me!
+    </button>
+
+    <p id="p1">
+        This is a text.
+        This is a text.
+        This is a text.
+        This is a text.
+    </p>
+    <input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+    <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+
+    <br><br><br>
+
+    <!-- Activity -->
+    <button onclick="buttonClick(this)" id="button1">Button</button>
+
+    <script>
+        document.getElementById("button1").addEventListener("click", buttonColor)
+        function buttonClick() {
+            alert("Hello World!")
+        }
+        function buttonColor() {
+            this.style.backgroundColor = "green"
+        }
+    </script>
+</body>
+</html>
