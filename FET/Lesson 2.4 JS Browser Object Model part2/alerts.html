@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+</head>
+<body>
+    <h1>The Window Object</h1>
+    <h2>The alert() Method</h2>
+    <p>Click the button to alert the hostname of the current URL.</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <br><br><br><br>
+
+    <button onclick="alertMe()">Update details</button>
+
+    <script>
+        function myFunction() {
+            alert(location.hostname);
+        }
+        function alertMe() {
+                Swal.fire('Any fool can use a computer')
+            }
+    </script>
+    <script src="./sweetalert2@11.js"></script>
+</body>
+</html>
+
+<!-- https://sweetalert2.github.io/ -->
