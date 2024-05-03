@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+<body>
+    <h1>The Window Object</h1>
+    <h2>The resizeBy() Method</h2>
+    <p>Open a new window, and resize it to 300 x 300:</p>
+    <button onclick="openWin()">Create window</button>
+    <button onclick="resizeWin()">Resize window</button>
+
+    <br><br><br><br><br>
+
+    <h2>The moveTo() and moveBy() Methods</h2>
+    <p><button onclick="openWin()">Create a window</button></p>
+    <p><button onclick="moveWinTo()">Move the window to 150 150</button></p>
+    <p><button onclick="moveWinBy()">Move the window by 75 75</button></p>
+
+    <br><br><br><br><br>
+
+    <!-- Activity -->
+    <h2>Activity</h2>
+    <button onclick="openWindow()">Create a window</button>
+    <button onclick="closeWindow()">Close window</button>
+
+    <script>
+        let myWindow;
+        function openWin() {
+            myWindow = window.open("", "", "width=400, height=400");
+        }
+        function resizeWin() {
+            myWindow.resizeTo(300, 300);
+        }
+        function moveWinTo() {
+            myWindow.moveTo(1, 999);
+        }
+        function moveWinBy() {
+            myWindow.moveBy(75, 75);
+        }
+        
+
+        // Activity
+
+        function openWindow() {
+            myWindow = window.open("", "", "width=600, height=800");
+            setTimeout(() => {
+                resizeWindow()
+            }, (5000));
+        }
+        function resizeWindow() {
+            myWindow.resizeTo(400, 200);
+            setTimeout(() => {
+                moveWindow()
+            }, (5000));
+        }
+        function moveWindow() {
+            myWindow.moveTo(500, 1000);
+            setTimeout(() => {
+                myWindow.close()
+            }, (5000));
+        }
+        function closeWindow() {
+            myWindow.close()
+        }
+    </script>
+</body>
+</html>
+
+<!-- The open method creates a new window and has the following syntax: window.open(URL, name, specs, replace) -->
