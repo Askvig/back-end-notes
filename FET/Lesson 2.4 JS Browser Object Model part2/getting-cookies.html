@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Cookies</title>
+</head>
+<body>
+    
+
+    <script>
+        // Example on how to access cookies
+        function getCookie(cname) {
+                let name = cname + "=";
+                let decodedCookie = decodeURIComponent(document.cookie);
+                let ca = decodedCookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    String operations are beneficial while working on cookies.
+
+    Sometimes, our cookies contain no English characters. For example, if we ask a Russian for their username, it will probably be provided in Cyrillic. Because of this, we decode our cookies at the beginning of the function.
+
+    Using the string methods, we can then split our cookie by semicolons to get our data. We then iterate on it and return the result.
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent
+
+    https://www.eso.org/~ndelmott/url_encode.html
+
+    https://www.url-encode-decode.com/
+-->

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Cookies</title>
+</head>
+<body>
+    
+
+    <script>
+        // Creating a cookie
+        document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    Cookies are small text files in the user’s computer storing information about them.
+
+    We need to set the document.cookie property. All cookies are stored in one text variable. All cookies need to have their names set.
+
+    To delete the cookie, we just need to set its expiration date to a date that has already passed.
+
+    If we set a new cookie, older cookies aren’t overwritten. The new cookie is added to the document.cookie object. We need the proper JavaScript functions to get and set cookies that search for the cookie in the cookie string.
+
+    Note that all cookies need to have their domain. We can’t save them on our local examples.
+-->
