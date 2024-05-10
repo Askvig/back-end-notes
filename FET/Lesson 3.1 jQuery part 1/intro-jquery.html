@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to jQuery</title>
+    <!-- First option -->
+    <script src="./jquery-3.6.0.js"></script>
+    <!-- Second option -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script src="./intro-jquery.js"></script>
+</body>
+</html>
+
+
+<!-- 
+    To start using jQuery, we need to link the jQuery JS file like we have linked all our other JavaScript files. However, to do this, we need to get it first. We can either download the file from the official jQuery website or use a Content Delivery Network (CDN) to access the file hosted on the Internet.
+
+    A CDN is a group of geographically distributed and interconnected servers. They provide cached internet content from a network location closest to a user to speed up its delivery. Using it, we can access files online without downloading them, as long as we have an internet connection.
+
+    The first way is to download the file. To do this, we should open this link. Right-click on the website content and choose the ‘Save as’ option. We should save it in the same place we put our HTML, JS and CSS files created in this lesson. We should then link it to all HTML files we’ll use in this lesson in the <head> section:
+
+    Using CDN has a significant advantage over the first. Many users have already downloaded jQuery from Google when visiting another website. As a result, the file will be loaded from the browser’s cache, so our site will load faster.
+
+    Basic jQuery syntax is:
+        $(selector).action()
+
+        The $ sign defines we’re using jQuery.
+        (selector) finds the HTML elements.
+        action() is a function that acts on the selected elements.
+    
+    jQuery uses the CSS syntax to select the elements.
+
+    Be cautious about attaching the jQuery file before all other JavaScript files using it. We’ll get errors, as jQuery
+    won’t be defined in the files attached earlier. Because of this, the order in which you have your javascript files is
+    essential.
+-->
